@@ -1,0 +1,14 @@
+# Start the production container
+npm run docker:up
+
+# Stop and remove containers
+npm run docker:down
+
+# View logs
+npm run docker:logs
+
+# Rebuild after code changes
+npm run docker:build
+
+# Start development mode (with hot reload)
+npm run docker:dev
