@@ -19,27 +19,25 @@ const ProjectCard: React.FC<ProjectProps> = ({
   return (
     <motion.button
       onClick={onClick}
-      whileHover={{ scale: 1.05, y: -4 }}
-      whileTap={{ scale: 0.95 }}
-      transition={{ type: "spring", stiffness: 300, damping: 15 }}
+      whileHover={{ scale: 1.02, y: -4 }} // Reduced scale slightly for smoother feel
+      whileTap={{ scale: 0.98 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
       className="
-    flex flex-col items-center justify-between
-    bg-white/10 backdrop-blur-md
-    border border-dark/20
-    rounded-2xl overflow-hidden
-    transition duration-100 ease-in-out
-    shadow-md hover:shadow-[0_0_15px_rgba(255,255,255,0.3)]
-    w-96 h-150
-  "
+        flex flex-col justify-between
+        bg-white border border-zinc-200
+        squared-2xl overflow-hidden
+        transition duration-200 ease-in-out
+        shadow-md 
+        w-full h-[500px]  // Fixed height for alignment, full width of parent container
+        text-left hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] 
+      "
     >
-      <div
-        className="bg-bg2 w-full flex items-center justify-center text-center text-2xl font-poppins font-bold"
-        style={{ fontSize: "42px", backgroundColor: "#6366f1" }}
-      >
-        {title}
-      </div>
+      {/* Media Section - Fixed height */}
+      <div className="h-48 bg-black w-full relative">
+        <div className="absolute top-0 left-0 w-full p-2 bg-linear-to-b from-black/80 to-transparent z-10">
+            <h3 className="text-white font-bold font-poppins text-lg pl-2">{title}</h3>
+        </div>
 
-      <div className="flex-1 w-full ">
         {videoSrc ? (
           <video
             src={videoSrc}
@@ -47,7 +45,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
             loop
             muted
             playsInline
-            className="w-96 h-80 object-cover "
+            className="w-full h-full object-cover"
           />
         ) : (
           <img
@@ -58,14 +56,18 @@ const ProjectCard: React.FC<ProjectProps> = ({
         )}
       </div>
 
-      <div className="flex-1 flex items-center text-sm text-dark bg-bg1 my-2 font-poppins font-bold">{description}</div>
+      {/* Content Section */}
+      <div className="flex-1 p-5 flex flex-col justify-between bg-white">
+        <p className="text-sm text-zinc-600 font-mono leading-relaxed line-clamp-6">
+          {description}
+        </p>
 
-      <button
-        type="button"
-        className="text-dark bg-bg1 hover:bg-purple-600 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 w-full"
-      >
-        Learn More
-      </button>
+        <div className="mt-4 pt-4 border-t border-zinc-100 w-full">
+          <span className="inline-block text-center text-white bg-black hover:bg-green-600  transition-colors font-medium squared-lg text-sm px-4 py-3 w-full font-mono">
+            Learn More
+          </span>
+        </div>
+      </div>
     </motion.button>
   );
 };

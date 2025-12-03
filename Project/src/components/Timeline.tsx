@@ -1,7 +1,7 @@
 function Timeline()
 {
     return(
-        <ol className="relative border-s border-default">                  
+        <ol className="relative border-s border-default max-w-7xl mx-auto w-full">                  
             <li className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-neutral-quaternary rounded-full mt-1.5 -start-1.5 border border-buffer"></div>
                 <time className="text-sm font-normal leading-none text-body">March 2016 - Dezember 2016</time>
