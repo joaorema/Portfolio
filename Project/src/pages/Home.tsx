@@ -1,4 +1,3 @@
-import Normalbtn from "@/components/Normalbtn";
 import Greenbtn from "@/components/Greenbtn";
 import Cplusbtn from "@/components/logobtns/Cplusbtn";
 import Cbtn from "@/components/logobtns/Cbtn";
@@ -10,6 +9,7 @@ import Vitebtn from "@/components/logobtns/Vitebtn";
 import Bashbtn from "@/components/logobtns/Bashbtn";
 import Linuxbtn from "@/components/logobtns/Linuxbtn";
 import Projectcard from "@/components/Projectcard";
+import Timeline from "@/components/Timeline";
 import { useNavigate } from "react-router-dom";
 import { GitHubCalendar } from "react-github-calendar";
 
@@ -91,84 +91,97 @@ const HomePage: React.FC = () => {
             </p>
             <div className="flex gap-15">
               <Greenbtn></Greenbtn>
-              <Normalbtn></Normalbtn>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Projects */}
-     <section
-      id="projects"
-      className="min-h-screen flex items-center justify-start bg-bg1 px-20"
-    >
-      <div className="flex gap-6 overflow-x-auto py-6 w-full snap-x snap-mandatory scroll-smooth scrollbar-none">
-        {Projects.map((project, index) => (
-          <div className="hrink-0 w-150 snap-start">
-            <Projectcard key={index} {...project} />
-          </div>
-        ))}
-      </div>
-    </section>
 
 
 
       {/* Experience */}
       <section
         id="experience"
-        className="min-h-screen flex items-center justify-center bg-bg1"
+        className="min-h-screen flex flex-col bg-bg1 px-20 py-10"
       >
-        <h2 className="text-3xl font-semibold">Experience</h2>
+        <h2 className="text-3xl font-semibold text-center">Experience</h2>
+        <div className="gap-4 text-xl font-poppins flex mx-auto py-100">
+        <Timeline></Timeline>
+        </div>
       </section>
 
-      {/* Technologies */}
+      {/* Projects */}
      <section
-      id="technologies"
-      className="min-h-screen flex items-center justify-center bg-bg1"
-    >
-      <div className="grid grid-cols-4 gap-6 w-full max-w-4xl">
+        id="projects"
+        className="min-h-screen flex flex-col bg-bg1 px-20 py-10"
+      >
+        <h1 className="text-4xl font-bold mb-6 text-center font-poppins">Projects</h1>
 
-        {/* Row 1 → 4 items */}
-        <div className="col-span-1"><Cbtn /></div>
-        <div className="col-span-1"><Cplusbtn /></div>
-        <div className="col-span-1"><Typescriptbtn /></div>
-        <div className="col-span-1"><Dockerbtn /></div>
+        <div className="flex overflow-x-auto py-6 w-full snap-x snap-mandatory scroll-smooth scrollbar-none">
+          {Projects.map((project, index) => (
+            <div key={index} className="shrink-0 w-150 snap-start">
+              <Projectcard {...project} />
+            </div>
+          ))}
+        </div>
+      </section>
 
-        {/* Row 2 → 3 items */}
-        <div className="col-span-1"><Linuxbtn /></div>
-        <div className="col-span-1"><Bashbtn /></div>
-        <div className="col-span-2"><Reactbtn /></div> {/* React takes 2 spaces */}
 
-        {/* Row 3 → rest */}
-        <div className="col-span-1"><Tailwindbtn /></div>
-        <div className="col-span-1"><Vitebtn /></div>
-        {/* Add more here */}
-      </div>
-    </section>
+     {/* Technologies */}
+      <section
+        id="technologies"
+        className="min-h-screen flex flex-col bg-bg1 px-20 py-10"
+      >
+        <h1 className="text-4xl font-bold mb-10 font-poppins text-center">Technologies</h1>
+
+        <div className="grid grid-cols-4 gap-6 w-500 h-full justify-center mx-auto">
+          {/* Row 1 → 4 items */}
+          <div className="col-span-1"><Cbtn /></div>
+          <div className="col-span-1"><Cplusbtn /></div>
+          <div className="col-span-1"><Typescriptbtn /></div>
+          <div className="col-span-1"><Dockerbtn /></div>
+
+          {/* Row 2 → 3 items */}
+          <div className="col-span-1"><Linuxbtn /></div>
+          <div className="col-span-1"><Bashbtn /></div>
+          <div className="col-span-2"><Reactbtn /></div> {/* React takes 2 columns */}
+
+          {/* Row 3 */}
+          <div className="col-span-1"><Tailwindbtn /></div>
+          <div className="col-span-1"><Vitebtn /></div>
+          {/* Add more here */}
+        </div>
+      </section>
+
+
 
 
       {/* Contributions */}
       <section
         id="contributions"
-        className="min-h-screen flex items-center justify-center bg-bg1"
+        className="min-h-screen flex flex-col bg-bg1 px-20 py-10"
       >
+        <h1 className="text-4xl font-bold mb-10 font-poppins text-center">Contributions</h1>
+        <div className="gap-4 text-xl font-poppins flex mx-auto py-100">
         <GitHubCalendar
           username="joaorema"
           colorScheme="dark"
           blockSize={20}
           blockMargin={4}
         />
+        </div>
       </section>
 
       {/* Contact */}
       <section
         id="contact"
-        className="min-h-screen flex items-center justify-center bg-bg1"
+        className="min-h-screen flex flex-col bg-bg1 px-20 py-10"
       >
-        <div className="flex flex-col gap-4 text-xl font-poppins">
-          <a href="mailto:joao@email.com" className="hover:text-green-400 text-5xl">📧 Email</a>
+        <h1 className="text-4xl font-bold mb-10 font-poppins text-center">Contacts</h1>
+        <div className="gap-4 text-xl font-poppins flex mx-auto py-100">
+          <a href="mailto:joaopcrema@gmail.com" className="hover:text-green-400 text-5xl">📧 Email</a>
           <a href="https://github.com/joaorema" target="_blank" className="hover:text-green-400 text-5xl">🐙 GitHub</a>
-          <a href="https://linkedin.com/in/joaorema" target="_blank" className="hover:text-green-400 text-5xl">🔗 LinkedIn</a>
+          <a href="https://linkedin.com/in/joao-rema" target="_blank" className="hover:text-green-400 text-5xl">🔗 LinkedIn</a>
           <a href="https://joaorema.dev" target="_blank" className="hover:text-green-400 text-5xl">🌐 Portfolio</a>
         </div>
       </section>
