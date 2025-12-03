@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
       className="
     flex flex-col items-center justify-between
     bg-white/10 backdrop-blur-md
-    border border-white/20
+    border border-dark/20
     rounded-2xl overflow-hidden
     transition duration-100 ease-in-out
     shadow-md hover:shadow-[0_0_15px_rgba(255,255,255,0.3)]
@@ -58,11 +58,11 @@ const ProjectCard: React.FC<ProjectProps> = ({
         )}
       </div>
 
-      <div className="flex-1 flex items-center text-sm text-gray-300 my-2 font-poppins font-bold">{description}</div>
+      <div className="flex-1 flex items-center text-sm text-dark bg-bg1 my-2 font-poppins font-bold">{description}</div>
 
       <button
         type="button"
-        className="text-white bg-bg1 hover:bg-purple-600 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 w-full"
+        className="text-dark bg-bg1 hover:bg-purple-600 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 w-full"
       >
         Learn More
       </button>

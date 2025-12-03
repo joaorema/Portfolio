@@ -17,7 +17,7 @@ function Timeline()
             </li>
             <li className="ms-4">
                 <div className="absolute w-3 h-3 bg-neutral-quaternary rounded-full mt-1.5 -start-1.5 border border-buffer"></div>
-                <time className="mb-1 text-sm font-normal leading-none text-body">During Covid</time>
+                <time className="mb-1 text-sm font-normal leading-none text-body">During Covid (6 Months)</time>
                 <h3 className="text-lg font-semibold text-heading my-2">Tech Support line at NOS</h3>
                 <p className="text-base font-normal text-body">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
             </li>

@@ -12,13 +12,13 @@ const links = [
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-bg6 shadow-md">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
       <div className="max-w-4xl mx-auto flex justify-center gap-10 py-4">
         {links.map((link) => (
           <a
             key={link.name}
             href={link.href}
-            className="text-white font-semibold hover:text-yellow-300 transition-colors"
+            className="text-dark font-semibold hover:text-yellow-300 transition-colors"
           >
             {link.name}
           </a>
