@@ -1,12 +1,16 @@
 function Cvbtn() {
   return (
-    <button
-      type="button"
-      className="text-dark text-success bg-neutral-primary border border-success hover:bg-success hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]  focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+    <a
+      href="/Joao_Rema_CV.pdf" 
+      download="Joao_Rema_CV.pdf"
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="inline-block cursor-pointer text-dark text-success bg-neutral-primary border border-success hover:bg-success hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none transition-all"
     >
       Download Resume
-    </button>
+    </a>
   );
 }
 
 export default Cvbtn;
+

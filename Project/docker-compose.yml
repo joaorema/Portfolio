@@ -10,21 +10,3 @@ services:
       - NODE_ENV=production
     restart: unless-stopped
     container_name: resume-app
-
-  # Development service (optional)
-  resume-dev:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile
-      target: development
-    ports:
-      - "5173:5173"
-    volumes:
-      - .:/app
-      - /app/node_modules
-    environment:
-      - NODE_ENV=development
-    command: npm run dev
-    container_name: resume-dev
-    profiles:
-      - dev

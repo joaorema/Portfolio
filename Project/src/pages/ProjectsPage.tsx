@@ -57,11 +57,10 @@ const ProjectPage: React.FC = () =>{
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-black mb-6 tracking-tight">
-            BUILDING WITH PURPOSE
+            PORTFOLIO
           </h2>
           <p className="text-xl text-zinc-600 max-w-3xl font-mono">
-            &gt; Crafting digital experiences using modern technologies, focusing
-            on performance, accessibility, and interactions.
+            &gt; A collection of projects showcasing my skills C, C++, TypeScript, Docker , Shell, GodotScript and Web development.
           </p>
         </div>
           

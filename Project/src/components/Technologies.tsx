@@ -5,20 +5,20 @@ const Technologies: React.FC = () => {
     {
       title: "Software & Game Dev",
       icon: "i-ph:code-bold",
-      description: "Building responsive, performant interfaces with modern frameworks.",
+      description: "Building responsive, performant and maintanable code.",
       tags: ["C", "C++", "React", "TypeScript", "JavaScript", "Godot Script", "Raylib", "Babylon"],
     },
     {
       title: "Web Development",
       icon: "i-ph:palette-bold",
-      description: "Crafting beautiful, accessible user interfaces with attention to detail.",
-      tags: ["Tailwind CSS", "Vite", "React", "CSS", "Figma"],
+      description: "Crafting Portefolios, building games and managing back and front end development.",
+      tags: ["Tailwind CSS", "Vite", "React", "CSS", "Fastify"],
     },
     {
       title: "Tools & Workflow",
       icon: "i-ph:gear-bold",
       description: "Leveraging modern development tools for efficient workflows.",
-      tags: ["Git", "Github", "Vite", "Notion", "Canvas"],
+      tags: ["Git", "Github", "Notion", "Canvas"],
     },
   ];
 
