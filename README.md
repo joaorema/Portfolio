@@ -30,49 +30,27 @@ This portfolio serves as a central hub for my work, experience, and technical wr
 
 Unlike standard templates, this project implements a Dockerized development environment to ensure consistency across different machines and deployments.
 
-✨ Key Features
+ Key Features
 
-📱 Mobile-First Design: Fully responsive layouts using Tailwind's utility classes.
+ Mobile-First Design: Fully responsive layouts using Tailwind's utility classes.
 
-⚡ Blazing Fast: Powered by Vite for instant HMR (Hot Module Replacement) and optimized builds.
+ Blazing Fast: Powered by Vite for instant HMR (Hot Module Replacement) and optimized builds.
 
-🛡️ Type Safety: Written in TypeScript to catch errors at compile time.
+ Type Safety: Written in TypeScript to catch errors at compile time.
 
-🐳 Containerized: Includes a Dockerfile and docker-compose for consistent deployment.
+ Containerized: Includes a Dockerfile and docker-compose for consistent deployment.
 
-🎨 Interactive UI: Smooth animations using Framer Motion and CSS transitions.
+ Interactive UI: Smooth animations using Framer Motion and CSS transitions.
 
-🛠️ Tech Stack
+ Tech Stack
 
-Tech
-
-Usage
-
-React
-
-Component-based UI architecture
-
-TypeScript
-
-Static typing for scalable code
-
-Tailwind CSS
-
-Utility-first styling for rapid development
-
-Vite
-
-Next-generation frontend tooling
-
-Framer Motion
-
-Production-ready animation library
-
-Docker
-
-Containerization for consistent environments
-
-🚀 Getting Started
+-React
+-Component-based UI architecture
+-TypeScript
+-Tailwind CSS
+-Vite
+-Framer Motion
+-Docker
 
 You can run this project locally using npm or Docker.
 
@@ -80,53 +58,31 @@ Option A: Standard (Node.js)
 
 Clone the repository
 
-git clone [https://github.com/joaorema/portfolio.git](https://github.com/joaorema/portfolio.git)
-cd portfolio
-
+-git clone [https://github.com/joaorema/portfolio.git](https://github.com/joaorema/portfolio.git)
+-cd portfolio
 
 Install dependencies
 
-npm install
-
+-npm install
 
 Run the dev server
 
-npm run dev
+-npm run dev
 
 
 Option B: Docker (Recommended) 🐳
 (if needed use sudo before the cmds for permissons)
 
-This project is fully dockerized to ensure it runs exactly the same on your machine as it does on mine.
-
 Build the image
 
-npm run docker:build 
-npm run docker:up 
+-npm run docker:build 
+-npm run docker:up 
 
 
-Run the container (dev mode)
-npm run docker:dev
+-Run the container (dev mode)
+-npm run docker:dev
 
 
-
-📂 Project Structure
-
-A quick look at the top-level files and directories you'll see in this project.
-
-.
-├── public/              # Static assets (images, CV, icons)
-├── src/
-│   ├── components/      # Reusable UI components (Buttons, Cards)
-│   ├── pages/           # Page layouts
-│   ├── assets/          # Dynamic assets imported in components
-│   └── App.tsx          # Main entry point
-├── Dockerfile           # Docker configuration
-├── tailwind.config.js   # Tailwind customization
-└── tsconfig.json        # TypeScript configuration
-
-
-📬 Contact
 
 João Rema Software Developer & Problem Solver
 
