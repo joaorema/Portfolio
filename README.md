@@ -31,19 +31,19 @@ This portfolio serves as a central hub for my work, experience, and technical wr
 Unlike standard templates, this project implements a Dockerized development environment to ensure consistency across different machines and deployments.
 
  Key Features
-
+<p> </p>
  Mobile-First Design: Fully responsive layouts using Tailwind's utility classes.
-
+<p> </p>
  Blazing Fast: Powered by Vite for instant HMR (Hot Module Replacement) and optimized builds.
-
+<p> </p>
  Type Safety: Written in TypeScript to catch errors at compile time.
-
+<p> </p>
  Containerized: Includes a Dockerfile and docker-compose for consistent deployment.
-
+<p> </p>
  Interactive UI: Smooth animations using Framer Motion and CSS transitions.
-
+<p> </p>
  Tech Stack
-
+<p> </p>
 -React
 -Component-based UI architecture
 -TypeScript
