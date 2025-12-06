@@ -1,7 +1,6 @@
 import Technologies from "@/components/Technologies";
 import HeroPage from "./HeroPage";
 import ExperiencePage from "./ExperiencePage";
-import ContributionsPage from "./ContributionsPage";
 import ProjectPage from "./ProjectsPage";
 import ContactsPage from "./ContactsPage";
 
