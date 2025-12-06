@@ -32,10 +32,6 @@ const HomePage: React.FC = () => {
          <Technologies />
       </section>
 
-      {/* Contributions */}
-      <section id="contributions" className="min-h-screen flex flex-col justify-center items-center px-4 py-16">
-          <ContributionsPage></ContributionsPage>
-      </section>
 
       {/* Contact */}
       <section id="contact" className="min-h-screen flex flex-col justify-center px-4 py-16">

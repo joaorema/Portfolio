@@ -1,24 +1,26 @@
 import React from "react";
 
-const Technologies: React.FC = () => {
+
+const Technologies: React.FC = () => 
+{
   const skillCategories = [
     {
       title: "Software & Game Dev",
       icon: "i-ph:code-bold",
       description: "Building responsive, performant and maintanable code.",
-      tags: ["C", "C++", "React", "TypeScript", "JavaScript", "Godot Script", "Raylib", "Babylon"],
+      tags: ["C", "C++", "TypeScript", "JavaScript", "Godot Script"],
     },
     {
       title: "Web Development",
       icon: "i-ph:palette-bold",
       description: "Crafting Portefolios, building games and managing back and front end development.",
-      tags: ["Tailwind CSS", "Vite", "React", "CSS", "Fastify"],
+      tags: ["Tailwind CSS", "Vite", "React", "CSS", "Fastify", "Babylon", "Sql", "MariaDb"],
     },
     {
       title: "Tools & Workflow",
       icon: "i-ph:gear-bold",
       description: "Leveraging modern development tools for efficient workflows.",
-      tags: ["Git", "Github", "Notion", "Canvas"],
+      tags: ["Git", "Github", "Notion", "Canvas", "Docker", "Bash"],
     },
   ];
 

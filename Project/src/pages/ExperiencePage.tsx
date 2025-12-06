@@ -14,7 +14,7 @@ const ExperiencePage: React.FC = () =>{
             CAREER HISTORY
           </h2>
           <p className="text-xl text-zinc-600 max-w-3xl font-mono">
-            &gt; Professional journey and the companies i worked with.
+            &gt; Professional journey and the companies I worked with.
           </p>
         </div>
           <div className="flex justify-center">

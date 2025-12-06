@@ -6,7 +6,6 @@ const links = [
   { name: "Projects", href: "#projects" },
   { name: "Experience", href: "#experience" },
   { name: "Technologies", href: "#technologies" },
-  { name: "Contributions", href: "#contributions" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -18,7 +17,7 @@ const Navbar: React.FC = () => {
           <a
             key={link.name}
             href={link.href}
-            className="text-dark font-semibold hover:text-yellow-300 transition-colors"
+            className="text-dark font-semibold"
           >
             {link.name}
           </a>
