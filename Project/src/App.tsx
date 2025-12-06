@@ -1,5 +1,4 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Homepage from "./pages/Home";
 
@@ -10,9 +9,7 @@ const App: React.FC = () => {
 
       {/* Main content */}
       <main className="flex-1">
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-        </Routes>
+        <Homepage></Homepage>
       </main>
     </div>
   );
