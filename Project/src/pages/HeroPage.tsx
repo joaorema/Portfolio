@@ -20,7 +20,7 @@ const HeroPage: React.FC = () => {
           {/* Text */}
           <div className="text-center md:text-left max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-bold font-poppins text-dark">
-              Hello, I'm <span className="text-green-600">João Rema</span>
+              Hello, I'm João Rema
             </h1>
             <p className="mt-6 text-lg md:text-xl font-mono text-gray-700 leading-relaxed">
               8 years of experience in client facing roles and sales. Very
