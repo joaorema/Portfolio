@@ -8,28 +8,26 @@ const ContactsPage: React.FC = () =>
       name: "Email",
       value: "joaopcrema@gmail.com",
       link: "mailto:joaopcrema@gmail.com",
-      icon: "📧", 
       color: "hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]",
     },
     {
       name: "LinkedIn",
       value: "in/joao-rema",
       link: "https://linkedin.com/in/joao-rema",
-      icon: "🔗",
+     
       color: "hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]",
     },
     {
       name: "GitHub",
       value: "github.com/joaorema",
       link: "https://github.com/joaorema",
-      icon: "🐙",
+      
       color: "hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]",
     },
     {
       name: "Resume",
       value: "Download PDF",
-      link: "/public/João_Rema_Cv_Eng.pdf", 
-      icon: "📄",
+      link: "https://drive.google.com/file/d/1wvD6DREwCWPYuOHhchOo9O68w8oGGTig/view?usp=drive_link", 
       color: "hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]",
     },
   ];
@@ -68,36 +66,16 @@ const ContactsPage: React.FC = () =>
                 ${method.color}
               `}
             >
-              {/* Icon Circle */}
-              <div className="w-16 h-16 bg-zinc-50 rounded-full flex items-center justify-center text-3xl mr-6 group-hover:bg-white group-hover:shadow-sm transition-all">
-                {method.icon}
-              </div>
+              
 
               {/* Text */}
               <div className="flex flex-col">
-                <span className="text-sm font-bold font-mono text-zinc-400 uppercase tracking-wider mb-1">
+                <span className="text-sm font-bold font-poppins text-black uppercase tracking-wider mb-1">
                   {method.name}
                 </span>
-                <span className="text-lg md:text-xl font-bold font-poppins text-black group-hover:underline decoration-2 underline-offset-4">
+                <span className="text-lg md:text-xl font-bold font-poppins text-zinc-600  decoration-2 underline-offset-4">
                   {method.value}
                 </span>
-              </div>
-
-              {/* Arrow Icon (only shows on hover or nice static placement) */}
-              <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:translate-x-1">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
               </div>
             </a>
           ))}

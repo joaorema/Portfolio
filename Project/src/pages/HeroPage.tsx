@@ -1,4 +1,3 @@
-import Cvbtn from "@/components/Cvbtn";
 import React from "react"
 
 const HeroPage: React.FC = () => {
@@ -23,14 +22,10 @@ const HeroPage: React.FC = () => {
               Hello, I'm João Rema
             </h1>
             <p className="mt-6 text-lg md:text-xl font-mono text-gray-700 leading-relaxed">
-              8 years of experience in client facing roles and sales. Very
-              curious, proactive and passionate about problem solving using
-              logical thinking. Currently finishing a software development
-              program at 42 Porto using C, C++, TypeScript and React.
+              Friendly, proactive, curious, and passionate about problem solving using logical thinking. 
+              With a Degree in Tourism Management and 8 years of experience in customer service roles and sales. 
+              Currently finishing a software development program at 42 Porto using C, C++, TypeScript and React.
             </p>
-            <div className="flex justify-center md:justify-start gap-4 mt-8">
-              <Cvbtn />
-            </div>
           </div>
         </div>
     );
