@@ -42,7 +42,7 @@ const ProjectPage: React.FC = () =>
           title: "Palavras",
           videoSrc: "/palavras.webm",
           description: "Recreating Wordle and Connections. Using React, vite, tailwind, fastify and JavaScript(.jsx). Backend uses database managing player login, Password (encrypted) and game stats.",
-          repoLink: "https://github.com/joaorema/Palavras",
+          repoLink: "https://palavrasproject.vercel.app",
         },
         {
           title: "MultiWeapons",
