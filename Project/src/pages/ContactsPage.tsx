@@ -27,7 +27,7 @@ const ContactsPage: React.FC = () =>
     {
       name: "Resume",
       value: "Download PDF",
-      link: "https://drive.google.com/file/d/10nBroUjuX4pIX4Y1Rs0T7_a5N_9p9VkN/view?usp=drive_link", 
+      link: "https://drive.google.com/file/d/1OcARhVC17U0GpM5fFeDX1eKk45gQSioW/view?usp=drive_link", 
       color: "hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]",
     },
   ];
