@@ -1,8 +1,6 @@
 import React from "react";
 
-const ContactsPage: React.FC = () =>
-{
-
+const ContactsPage: React.FC = () => {
   const contactMethods = [
     {
       name: "Email",
@@ -14,20 +12,20 @@ const ContactsPage: React.FC = () =>
       name: "LinkedIn",
       value: "in/joao-rema",
       link: "https://linkedin.com/in/joao-rema",
-     
+
       color: "hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]",
     },
     {
       name: "GitHub",
       value: "github.com/joaorema",
       link: "https://github.com/joaorema",
-      
+
       color: "hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]",
     },
     {
       name: "Resume",
       value: "Download PDF",
-      link: "https://drive.google.com/file/d/1OcARhVC17U0GpM5fFeDX1eKk45gQSioW/view?usp=drive_link", 
+      link: "https://drive.google.com/file/d/1X_81nQlN2mc2ARXPLtPj6guzNTBtbp8h/view?usp=drive_link",
       color: "hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]",
     },
   ];
@@ -38,7 +36,6 @@ const ContactsPage: React.FC = () =>
       className="min-h-[80vh] flex flex-col justify-center px-4 py-20 bg-white"
     >
       <div className="max-w-5xl mx-auto w-full">
-        
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold font-poppins text-black mb-6">
@@ -66,8 +63,6 @@ const ContactsPage: React.FC = () =>
                 ${method.color}
               `}
             >
-              
-
               {/* Text */}
               <div className="flex flex-col">
                 <span className="text-sm font-bold font-poppins text-black uppercase tracking-wider mb-1">
@@ -80,18 +75,16 @@ const ContactsPage: React.FC = () =>
             </a>
           ))}
         </div>
-        
+
         {/* Footer Note */}
         <div className="mt-20 text-center border-t border-zinc-100 pt-10">
           <p className="font-mono text-sm text-zinc-400">
-             Designed & Built by João Rema © {new Date().getFullYear()}
+            Designed & Built by João Rema © {new Date().getFullYear()}
           </p>
         </div>
-
       </div>
     </section>
   );
 };
 
-
-export default ContactsPage
+export default ContactsPage;

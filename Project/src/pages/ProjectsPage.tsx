@@ -45,6 +45,12 @@ const ProjectPage: React.FC = () =>
           repoLink: "https://palavrasproject.vercel.app",
         },
         {
+          title: "Bills",
+          videoSrc: "/billsvideo.webm",
+          description: "Developed a full stack management platform using Next.js, TypeScript , Prisma and PostgreSql. Implemented user authentication , dashboard , profile and search feature.",
+          repoLink: "https://joaoremasubs.vercel.app/",
+        },
+        {
           title: "MultiWeapons",
           videoSrc: "/multiweapons.mp4",
           description: "2D Game created with Godot. Roguelike game with multiple implemented systems like player, stats, enemys, weapons and spawners. Passion project still in development. Click to try it!",
