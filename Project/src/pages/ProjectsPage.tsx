@@ -77,7 +77,7 @@ const ProjectPage: React.FC = () =>
             </p>
         </div>
           
-          <div className="flex overflow-x-auto gap-6 py-8 px-2 w-full snap-x snap-mandatory scrollbar-none pb-12">
+          <div className="flex overflow-x-auto gap-6 py-8 px-2 w-full snap-x snap-mandatory pb-12">
             {Projects.map((project, index) => (
               <div key={index} className="shrink-0 w-[85vw] md:w-96 snap-center">
                 <ProjectCard {...project} />
