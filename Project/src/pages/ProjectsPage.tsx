@@ -36,12 +36,12 @@ const ProjectPage: React.FC = () =>
           title: "Transcendence ",
           videoSrc: "/transcendece.webm",
           description: "Full-stack web application, implemented as a 42 Porto project. The goal is to build a robust web application using TypeScript, handling OAuth, databases, and live multiplayer WebSockets.",
-          repoLink: "https://starcadence.dev",
+          repoLink: "https://starcendence.dev/",
         },
         {
           title: "Palavras",
           videoSrc: "/palavras.webm",
-          description: "Recreating Wordle and Connections. Using React, vite, tailwind, fastify and JavaScript(.jsx). Backend uses database managing player login, Password (encrypted) and game stats.",
+          description: "Recreating Wordle and Connections. Using React, vite, tailwind and JavaScript(.jsx). Backend uses Supabase managing player login, Password (encrypted) and game stats.",
           repoLink: "https://palavrasproject.vercel.app",
         },
         {
