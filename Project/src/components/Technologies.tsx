@@ -8,7 +8,7 @@ const Technologies: React.FC = () =>
       title: "Software & Game Dev",
       icon: "i-ph:code-bold",
       description: "Building responsive, performant and maintanable code.",
-      tags: ["C", "C++", "TypeScript", "JavaScript", "Godot Script"],
+      tags: ["C", "C++","Python", "TypeScript", "JavaScript", "Godot Script"],
     },
     {
       title: "Web Development",
@@ -20,7 +20,7 @@ const Technologies: React.FC = () =>
       title: "Tools & Workflow",
       icon: "i-ph:gear-bold",
       description: "Leveraging modern development tools for efficient workflows.",
-      tags: ["Git", "Github", "Notion", "Canvas", "Docker", "Bash"],
+      tags: ["Git", "Github", "Notion", "Canva", "Docker", "Bash"],
     },
   ];
 
