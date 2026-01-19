@@ -35,7 +35,7 @@ const Technologies: React.FC = () =>
         <div className="mb-16">
           <div className="inline-block px-3 py-1 bg-white border border-black mb-6 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
             <span className="text-xs font-mono font-bold text-black uppercase tracking-wider">
-              03. TECHNOLOGIES
+              02. TECHNOLOGIES
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-black mb-6 tracking-tight">
