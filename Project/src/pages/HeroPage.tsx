@@ -17,7 +17,7 @@ const HeroPage: React.FC = () => {
           Hello, I'm João Rema 
         </h1>
         <p className="mt-6 text-lg md:text-xl font-mono text-gray-700 leading-relaxed">
-          Friendly, proactive, curious, and passionate about problem solving
+          Friendly, proactive, curious and passionate about problem solving
           using logical thinking. With a Degree in Tourism Management and 8
           years of experience in customer service roles and sales. Finished
           recently a software development program at 42 Porto using C, C++

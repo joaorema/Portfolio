@@ -15,11 +15,6 @@ const HomePage: React.FC = () => {
         <HeroPage></HeroPage>
       </section>
 
-      {/* Experience */}
-      <section id="experience" className="min-h-screen flex flex-col justify-center px-4 py-16">
-        <ExperiencePage></ExperiencePage>
-      </section>
-
       {/* Projects */}
       <section id="projects" className="min-h-screen flex flex-col justify-center px-4 py-16 bg-gray-50">
         <ProjectPage></ProjectPage>
@@ -31,6 +26,10 @@ const HomePage: React.FC = () => {
          <Technologies />
       </section>
 
+      {/* Experience */}
+      <section id="experience" className="min-h-screen flex flex-col justify-center px-4 py-16">
+        <ExperiencePage></ExperiencePage>
+      </section>
 
       {/* Contact */}
       <section id="contact" className="min-h-screen flex flex-col justify-center px-4 py-16">
